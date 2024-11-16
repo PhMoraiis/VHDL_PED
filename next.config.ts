@@ -7,7 +7,6 @@ const withNextra = nextra({
 })
 
 const nextConfig: NextConfig = {
-  basePath: '/docs',
   output: "export",
   images: {
     unoptimized: true
