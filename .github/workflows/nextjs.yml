@@ -35,6 +35,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Verificar arquivos
+        run: |
+          echo "Verificando se yarn.lock e package.json existem..."
+          ls -la ${{ github.workspace }}
       - name: Detect package manager
         id: detect-package-manager
         run: |
