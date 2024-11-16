@@ -39,8 +39,12 @@ jobs:
         run: |
           echo "Diretório atual:"
           pwd
-          echo "Listando arquivos:"
+          echo "Listando arquivos no diretório atual:"
           ls -la ${{ github.workspace }}
+      - name: Verificar diretório pai
+        run: |
+          echo "Listando arquivos no diretório pai:"
+          ls -la ${{ github.workspace }}/..
       - name: Detect package manager
         id: detect-package-manager
         run: |
