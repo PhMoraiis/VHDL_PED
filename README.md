@@ -1,56 +1,99 @@
-# Starlight Starter Kit: Tailwind
+## AriaDocs - Documentation Template
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+This feature-packed documentation template, built with Next.js, offers a sleek and responsive design, perfect for all your project documentation needs.
 
-```
-npm create astro@latest -- --template starlight/tailwind
-```
+<img src="./public/public-og.png" />
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/starlight/tree/main/examples/tailwind)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/starlight/tree/main/examples/tailwind)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/withastro/starlight&create_from_path=examples/tailwind)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwithastro%2Fstarlight%2Ftree%2Fmain%2Fexamples%2Ftailwind&project-name=my-starlight-docs&repository-name=my-starlight-docs)
+<br/>
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Here are all versions of the AriaDocs template, each crafted for specific use cases:
 
-## 🚀 Project Structure
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+- **Advanced Docs:** A comprehensive template offering extensive features for in-depth documentation needs. Perfect for larger projects that require detailed explanations and advanced configurations.  
+  [Explore the Advanced Docs](https://github.com/nisabmohd/Aria-Docs/tree/master)
 
-```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   ├── docs/
-│   │   └── config.ts
-│   └── env.d.ts
-├── astro.config.mjs
-├── package.json
-├── tailwind.config.mjs
-└── tsconfig.json
+- **Lite Version:** A streamlined, no-frills template perfect for straightforward documentation needs.  
+  [Explore the Lite Version](https://github.com/nisabmohd/Aria-Docs/tree/minimal-docs)
+
+- **Version with Versioning:** A powerful option for projects that require historical documentation tracking. Manage multiple versions of your docs effortlessly.  
+  [Check out the Versioning Feature](https://github.com/nisabmohd/Aria-Docs/tree/version_docs)
+
+- **i18n Support Version (WIP):** Designed for international audiences, this version will offer comprehensive multilingual support.  
+  [Preview the i18n Support](https://github.com/nisabmohd/Aria-Docs/tree/i18n-support)
+
+### Quick Start
+
+You can create a new Ariadocs project using the command:
+
+```bash
+npx create-aria-doc <project-directory>
 ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+### Expected Output
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+When you run the CLI, you can expect an output similar to this:
 
-Static assets, like favicons, can be placed in the `public/` directory.
+```
+Creating a new Ariadocs project in /path/to/your/project from the master branch...
+Cloning Master (Full Documentation)...
+Ariadocs project successfully created in /path/to/your/project!
 
-## 🧞 Commands
+Next steps:
+1. Navigate to your project directory:
+   cd <project-directory>
+2. Install dependencies:
+   npm install
+3. Start the development server:
+   npm run dev
+```
 
-All commands are run from the root of the project, from a terminal:
+## Getting Started
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+First, run the development server:
 
-## 👀 Want to learn more?
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/nisabmohd/Aria-Docs)
+
+## Key Features
+
+| **Feature**                   | **Description**                                          |
+|-------------------------------|----------------------------------------------------------|
+| MDX Support                   | Write interactive documentation with MDX.                |
+| Nested Pages                  | Organize content in a nested, hierarchical structure.    |
+| Blog Section                  | Include a dedicated blog section.                        |
+| Table of Contents             | Auto-generated TOC for easy navigation.                  |
+| Pagination                    | Split content across multiple pages.                     |
+| Syntax Highlighting           | Highlight code for better readability.                   |
+| Code Line Highlighting & Titles | Highlight specific lines with descriptive titles.      |
+| Interactive Code Blocks       | Language-specific and interactive code display.          |
+| Custom Components             | Embed custom, reusable components in your docs.          |
+| Light & Dark Mode             | Toggle between light and dark themes.                    |
+| Search Functionality          | Quickly find content with a built-in search.             |
+| Code Switcher                 | Switch between code languages or variations.             |
+| Code Copy                     | Copy code blocks with a single click.                    |
+| TOC Observer Highlight        | Highlight active sections in the TOC as you scroll.      |
+| Static Site Generation        | Generate a static, high-performance site.                |
+| SEO-Optimized                 | Structured for optimal search engine indexing.           |
+
+
+## Additional Themes
+
+<img src="./public/halloween.png" alt="halloween" />
+<img src="./public/nebula.png" alt="halloween" />
+<img src="./public/ocean.png" alt="halloween" />
