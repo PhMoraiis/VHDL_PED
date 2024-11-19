@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@radix-ui/react-accordion": "^1.2.0",
     "@radix-ui/react-avatar": "^1.1.0",
     "@radix-ui/react-collapsible": "^1.1.0",
@@ -47,5 +48,12 @@
     "postcss": "^8",
     "tailwindcss": "^3.4.10",
     "typescript": "^5"
+=======
+    "@astrojs/starlight": "^0.29.1",
+    "astro": "^4.16.10",
+    "sharp": "^0.32.5",
+    "@astrojs/check": "^0.9.4",
+    "typescript": "^5.6.3"
+>>>>>>> f3fa8d128403721eac29c4ea202c8780a3f45d8f
   }
 }

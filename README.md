@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 ## AriaDocs - Documentation Template
+=======
+# Starlight Starter Kit: Basics
+>>>>>>> f3fa8d128403721eac29c4ea202c8780a3f45d8f
 
 This feature-packed documentation template, built with Next.js, offers a sleek and responsive design, perfect for all your project documentation needs.
 
+<<<<<<< HEAD
 <img src="./public/public-og.png" />
 
 <br/>
@@ -30,10 +35,21 @@ npx create-aria-doc <project-directory>
 ```
 
 ### Expected Output
+=======
+```
+npm create astro@latest -- --template starlight
+```
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/starlight/tree/main/examples/basics)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/starlight/tree/main/examples/basics)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/withastro/starlight&create_from_path=examples/basics)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwithastro%2Fstarlight%2Ftree%2Fmain%2Fexamples%2Fbasics&project-name=my-starlight-docs&repository-name=my-starlight-docs)
+>>>>>>> f3fa8d128403721eac29c4ea202c8780a3f45d8f
 
 When you run the CLI, you can expect an output similar to this:
 
 ```
+<<<<<<< HEAD
 Creating a new Ariadocs project in /path/to/your/project from the master branch...
 Cloning Master (Full Documentation)...
 Ariadocs project successfully created in /path/to/your/project!
@@ -45,6 +61,19 @@ Next steps:
    npm install
 3. Start the development server:
    npm run dev
+=======
+.
+├── public/
+├── src/
+│   ├── assets/
+│   ├── content/
+│   │   ├── docs/
+│   │   └── config.ts
+│   └── env.d.ts
+├── astro.config.mjs
+├── package.json
+└── tsconfig.json
+>>>>>>> f3fa8d128403721eac29c4ea202c8780a3f45d8f
 ```
 
 ## Getting Started
