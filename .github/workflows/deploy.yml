@@ -17,20 +17,32 @@ jobs:
         with:
           node-version: 18
           cache: yarn
-          cache-dependency-path: documentation/yarn.lock  # Add this line
+          cache-dependency-path: documentation/yarn.lock
 
       - name: Install dependencies
-        working-directory: ./documentation  # Add this line
+        working-directory: ./documentation
         run: yarn install --frozen-lockfile
         
       - name: Build website
-        working-directory: ./documentation  # Add this line
+        working-directory: ./documentation
         run: yarn build
 
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: documentation/build  # Update this path
+          path: documentation/build
 
   deploy:
-    # Rest of the deploy job remains the same
+    name: Deploy to GitHub Pages
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
